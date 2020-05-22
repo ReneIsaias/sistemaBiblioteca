@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4C3BBB49-7C98-48E7-91FE-38C45B986DF3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BibliotecaRene</RootNamespace>
+    <AssemblyName>BibliotecaRene</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Aservo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Aservo.Designer.cs">
+      <DependentUpon>Aservo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Autor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Autor.Designer.cs">
+      <DependentUpon>Autor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AutoresAservocs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoresAservocs.Designer.cs">
+      <DependentUpon>AutoresAservocs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Carrera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Carrera.Designer.cs">
+      <DependentUpon>Carrera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Categoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Categoria.Designer.cs">
+      <DependentUpon>Categoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Condiciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Condiciones.Designer.cs">
+      <DependentUpon>Condiciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Configurar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configurar.Designer.cs">
+      <DependentUpon>Configurar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editorial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editorial.Designer.cs">
+      <DependentUpon>Editorial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ejemplar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ejemplar.Designer.cs">
+      <DependentUpon>Ejemplar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Idiomacs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Idiomacs.Designer.cs">
+      <DependentUpon>Idiomacs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Informacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informacion.Designer.cs">
+      <DependentUpon>Informacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lectores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lectores.Designer.cs">
+      <DependentUpon>Lectores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuPrincipalcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPrincipalcs.Designer.cs">
+      <DependentUpon>MenuPrincipalcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrigenEjemplar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrigenEjemplar.Designer.cs">
+      <DependentUpon>OrigenEjemplar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pais.Designer.cs">
+      <DependentUpon>Pais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PerfilRene.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PerfilRene.Designer.cs">
+      <DependentUpon>PerfilRene.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Permisos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Permisos.Designer.cs">
+      <DependentUpon>Permisos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prestamo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prestamo.Designer.cs">
+      <DependentUpon>Prestamo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sancioncs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sancioncs.Designer.cs">
+      <DependentUpon>Sancioncs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SancionesAplicar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SancionesAplicar.Designer.cs">
+      <DependentUpon>SancionesAplicar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SituacionPersonaRene.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SituacionPersonaRene.Designer.cs">
+      <DependentUpon>SituacionPersonaRene.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios.Designer.cs">
+      <DependentUpon>Usuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsuariosInserta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UsuariosInserta.Designer.cs">
+      <DependentUpon>UsuariosInserta.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Aservo.resx">
+      <DependentUpon>Aservo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Autor.resx">
+      <DependentUpon>Autor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutoresAservocs.resx">
+      <DependentUpon>AutoresAservocs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Carrera.resx">
+      <DependentUpon>Carrera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Categoria.resx">
+      <DependentUpon>Categoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Condiciones.resx">
+      <DependentUpon>Condiciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configurar.resx">
+      <DependentUpon>Configurar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editorial.resx">
+      <DependentUpon>Editorial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ejemplar.resx">
+      <DependentUpon>Ejemplar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Idiomacs.resx">
+      <DependentUpon>Idiomacs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informacion.resx">
+      <DependentUpon>Informacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lectores.resx">
+      <DependentUpon>Lectores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPrincipalcs.resx">
+      <DependentUpon>MenuPrincipalcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrigenEjemplar.resx">
+      <DependentUpon>OrigenEjemplar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pais.resx">
+      <DependentUpon>Pais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PerfilRene.resx">
+      <DependentUpon>PerfilRene.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Permisos.resx">
+      <DependentUpon>Permisos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prestamo.resx">
+      <DependentUpon>Prestamo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sancioncs.resx">
+      <DependentUpon>Sancioncs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SancionesAplicar.resx">
+      <DependentUpon>SancionesAplicar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SituacionPersonaRene.resx">
+      <DependentUpon>SituacionPersonaRene.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios.resx">
+      <DependentUpon>Usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsuariosInserta.resx">
+      <DependentUpon>UsuariosInserta.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
